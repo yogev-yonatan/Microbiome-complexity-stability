@@ -17,7 +17,7 @@ dissimilarity=dissimilarity(i);
 
 
 l = length(overlap);
-idx = round(l*p):l;
+idx = round(l*(1-p)):l;
 
 f = fit(overlap(idx),dissimilarity(idx),'poly1');
 D2 = (f.p1)^2;
